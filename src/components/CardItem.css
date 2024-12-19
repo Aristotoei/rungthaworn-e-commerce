@@ -1,0 +1,22 @@
+.main-container {
+  width: 100%;
+  min-height: 300px;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 20px 40px;
+}
+.card {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 8px 10px 10px #8f8f8f;
+}
+.card-image {
+  height: 240px;
+  overflow: hidden;
+}
+.card-content {
+  padding: 10px 0;
+}

@@ -8,7 +8,8 @@ function ImageSlider({ slides }) {
     width: '100%',
     height: '480px',
     backgroundImage: `url(${slides[currentIndex].url})`,
-    backgroundSize: 'cover',
+    backgroundSize: '1420px 480px',
+    backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
   };
 
@@ -16,7 +17,7 @@ function ImageSlider({ slides }) {
     position: 'absolute',
     top: '50%',
     transform: 'translate(0, -50%)',
-    left: '32px',
+    left: '300px',
     fontSize: '45px',
     color: '#fff',
     zIndex: '1',
@@ -27,7 +28,7 @@ function ImageSlider({ slides }) {
     position: 'absolute',
     top: '50%',
     transform: 'translate(0, -50%)',
-    right: '32px',
+    right: '300px',
     fontSize: '45px',
     color: '#fff',
     zIndex: '1',
