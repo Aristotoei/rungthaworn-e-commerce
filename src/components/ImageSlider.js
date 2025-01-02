@@ -49,9 +49,9 @@ function ImageSlider({ slides }) {
 
   return (
     <div style={{position: 'relative'}}>
-      <div style={leftArrow} onClick={goToPrevious}>←</div>
+      <div style={leftArrow} onClick={goToPrevious}>⮜</div>
       <div style={slideStyle}></div>
-      <div style={rightArrow} onClick={goToNext}>→</div>
+      <div style={rightArrow} onClick={goToNext}>⮞</div>
     </div>
   )
 }

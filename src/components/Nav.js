@@ -5,7 +5,7 @@ function Nav() {
   return (
     <div className='nav'>
       <ul>
-        <li className='dropdown'><a href='1'>Category</a>
+        <li className='dropdown'><a href='/'>Category</a>
           <div className='dropdown-content'>
             <a href='1.1'>Category1</a>
             <a href='1.2'>Category2</a>

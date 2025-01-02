@@ -19,7 +19,8 @@
   border-radius: 16px;
   border: none;
   background-color: rgb(235, 235, 235);
-  padding: 10px;
+  padding: 0 24px;
+  font-size: 16px;
 }
 .search-box input:focus-visible {
   outline: none;

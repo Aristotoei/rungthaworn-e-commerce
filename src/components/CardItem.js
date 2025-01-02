@@ -7,15 +7,17 @@ function CardItem({ ItemData }) {
       {
         ItemData.map((item) => {  
           return (
-            <div key={item.id} className='card'>
-              <div className='card-image'>
-                <img src={item.image} alt={item.name} />
+            <a href={`product/${item.id}`}>
+              <div key={item.id} className='card'>
+                <div className='card-image'>
+                  <img src={item.image} alt={item.name} />
+                </div>
+                <div className='card-content'>
+                  <h2>{item.name}</h2>
+                  <p>{item.price}</p>
+                </div>
               </div>
-              <div className='card-content'>
-                <h2>{item.name}</h2>
-                <p>{item.price}</p>
-              </div>
-            </div>
+            </a>
           )
         })
       }
