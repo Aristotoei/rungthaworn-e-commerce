@@ -1,12 +1,21 @@
 #header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+.top {
   display: flex;
   height: 60px;
+  background-color: #fff;
+  font-size: 24px;
 }
 .brand {
   width: 25%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 .search-box {
   width: 65%;
@@ -29,4 +38,41 @@
   width: 10%;
   text-align: center;
   margin: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #EE092D;
+}
+li {
+  float: left;
+}
+li a {
+  color: white;
+  display: inline-block;
+  padding: 14px 24px;
+  text-align: center;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #f34f67;
+}
+.dropdown-content {
+  display: none;
+  background-color: #f34f67b4;
+  position: absolute;
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  padding: 14px 20px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.right {
+  float: right;
 }

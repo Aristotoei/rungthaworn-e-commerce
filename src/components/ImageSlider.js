@@ -8,9 +8,10 @@ function ImageSlider({ slides }) {
     width: '100%',
     height: '480px',
     backgroundImage: `url(${slides[currentIndex].url})`,
-    backgroundSize: '1420px 480px',
+    backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center'
+    backgroundPosition: 'center',
+    transition: '0.5s ease-in-out'
   };
 
   const leftArrow = {
@@ -19,7 +20,7 @@ function ImageSlider({ slides }) {
     transform: 'translate(0, -50%)',
     left: '300px',
     fontSize: '45px',
-    color: '#fff',
+    color: '#aaa',
     zIndex: '1',
     cursor: 'pointer'
   };
@@ -30,7 +31,7 @@ function ImageSlider({ slides }) {
     transform: 'translate(0, -50%)',
     right: '300px',
     fontSize: '45px',
-    color: '#fff',
+    color: '#aaa',
     zIndex: '1',
     cursor: 'pointer'
   };
