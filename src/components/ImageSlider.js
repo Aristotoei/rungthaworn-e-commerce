@@ -1,40 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-
+import './ImageSlider.css'
 function ImageSlider({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const slideStyle = {
-    width: '100%',
-    height: '480px',
-    backgroundImage: `url(${slides[currentIndex].url})`,
-    backgroundSize: 'contain',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    transition: '0.5s ease-in-out'
-  };
-
-  const leftArrow = {
-    position: 'absolute',
-    top: '50%',
-    transform: 'translate(0, -50%)',
-    left: '300px',
-    fontSize: '45px',
-    color: '#aaa',
-    zIndex: '1',
-    cursor: 'pointer'
-  };
-
-  const rightArrow = {
-    position: 'absolute',
-    top: '50%',
-    transform: 'translate(0, -50%)',
-    right: '300px',
-    fontSize: '45px',
-    color: '#aaa',
-    zIndex: '1',
-    cursor: 'pointer'
-  };
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0
@@ -50,9 +18,9 @@ function ImageSlider({ slides }) {
 
   return (
     <div style={{position: 'relative'}}>
-      <div style={leftArrow} onClick={goToPrevious}>⮜</div>
-      <div style={slideStyle}></div>
-      <div style={rightArrow} onClick={goToNext}>⮞</div>
+      <div className='left-arrow' onClick={goToPrevious}>⮜</div>
+      <div className='slide-style' style={{ backgroundImage: `url(${slides[currentIndex].url})` }}></div>
+      <div className='right-arrow' onClick={goToNext}>⮞</div>
     </div>
   )
 }

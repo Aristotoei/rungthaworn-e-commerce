@@ -27,6 +27,14 @@ const router = createBrowserRouter([
   {
     path: '/product/:id',
     element: <ProductDetail />
+  },
+  {
+    path: '/contact',
+    element: <h1>GitHub : Aristotoei<br></br>Email : thavornsan@outlook.com</h1>
+  },
+  {
+    path: '*',
+    element: <h1>under development</h1>
   }
 ]);
 

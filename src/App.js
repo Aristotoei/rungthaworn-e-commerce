@@ -1,12 +1,12 @@
 import './App.css';
-import ItemData from './components/ItemData';
+import CardItemData from './components/CardItemData';
 import Slides from './components/Slides';
 
 function App() {
   return (
     <div className='App'>
       <Slides />
-      <ItemData />
+      <CardItemData />
     </div>
   );
 }

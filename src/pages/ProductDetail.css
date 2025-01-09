@@ -4,12 +4,12 @@
   height: 720px;
 }
 .left-container {
-  width: 70%;
+  width: 60%;
   padding: 120px;
 }
 .right-container {
-  width: 30%;
-  padding: 120px 0;
+  width: 40%;
+  padding: 120px 120px 0 0;
 }
 .product-image {
   display: flex;
@@ -34,4 +34,27 @@ button {
   padding: 8px;
   margin: 12px 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    height: 720px;
+    flex-direction: column;
+  }
+  .left-container {
+    width: 100%;
+    padding: 0;
+  }
+  .right-container {
+    width: 100%;
+    padding: 0;
+  }
+  .product-image {
+    height: 300px;
+    border: none;
+  }
+  .product-info {
+    font-size: 18px;
+    padding: 0 16px;
+  }
 }

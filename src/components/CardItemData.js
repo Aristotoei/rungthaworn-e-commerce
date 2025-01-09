@@ -1,7 +1,7 @@
 import React from 'react'
 import CardItem from './CardItem'
-function ItemData() {
-  const ItemData = [
+function CardItemData() {
+  const CardItemData = [
     {
       id: 1,
       image: 'https://www.shutterstock.com/image-vector/new-item-text-effect-design-260nw-2529140099.jpg',
@@ -52,8 +52,8 @@ function ItemData() {
     }
   ]
   return (
-    <div><CardItem ItemData={ItemData} /></div>
+    <div><CardItem ItemData={CardItemData} /></div>
   )
 }
 
-export default ItemData
+export default CardItemData
