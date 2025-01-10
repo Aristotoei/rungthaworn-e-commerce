@@ -4,24 +4,17 @@ import './ImageSlider.css'
 function ImageSlider({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const goToPrevious = () => {
-    const isFirstSlide = currentIndex === 0
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const goToNext = () => {
-    const isLastSlide = currentIndex === 2
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
+  for (let i = 0; i < slides.length - 1; i++) {
+    if (currentIndex === slides.length - 1) {
+      setTimeout(() => setCurrentIndex(0), 3000);
+    }
+    else {
+      setTimeout(() => setCurrentIndex(currentIndex + 1), 3000);
+    }
+  }
+  
   return (
-    <div style={{position: 'relative'}}>
-      <div className='left-arrow' onClick={goToPrevious}>⮜</div>
-      <div className='slide-style' style={{ backgroundImage: `url(${slides[currentIndex].url})` }}></div>
-      <div className='right-arrow' onClick={goToNext}>⮞</div>
-    </div>
+      <div className='slide-style' style={{ backgroundImage: `url(${slides[currentIndex].url})`, position: 'relative' }}></div>
   )
 }
 

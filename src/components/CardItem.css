@@ -44,3 +44,10 @@ a {
     padding: 20px 60px;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .main-container {
+    gap: 24px;
+    padding: 40px 100px;
+  }
+}

@@ -6,7 +6,7 @@ function Header() {
     <div id='header'>
       <div className='top'>
         <div className='brand'>
-          <div style={{flexGrow: '3'}}><a href='/'>logo</a></div>
+          <div style={{flexGrow: '3', padding: '0 8px'}}><a href='/'>logo</a></div>
           <div style={{flexGrow: '5'}}>Rungthaworn Minimart</div>
         </div>
         <div className='search-box'>

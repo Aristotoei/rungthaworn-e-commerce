@@ -6,44 +6,9 @@
   background-position: center;
   transition: 0.5s ease-in-out;
 }
-.left-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 300px;
-  font-size: 45px;
-  color: #aaa;
-  z-index: 1;
-  cursor: pointer;
-}
-.right-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  right: 300px;
-  font-size: 45px;
-  color: #aaa;
-  z-index: 1;
-  cursor: pointer;
-}
 
 @media screen and (max-width: 600px) {
   .slide-style {
     height: 275px;
-  }
-  .left-arrow {
-    left: 24px;
-  }
-  .right-arrow {
-    right: 24px;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-  .left-arrow {
-    left: 48px;
-  }
-  .right-arrow {
-    right: 48px;
   }
 }
