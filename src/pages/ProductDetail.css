@@ -18,6 +18,7 @@
   height: 480px;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .product-info {
   font-size: 24px;
@@ -56,5 +57,18 @@ button {
   .product-info {
     font-size: 18px;
     padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .left-container {
+    padding: 60px;
+  }
+  .right-container {
+    padding: 60px 60px 0 0;
+  }
+  .product-image {
+    height: 360px;
+    border: none;
   }
 }
