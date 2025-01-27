@@ -106,7 +106,7 @@ function ProductDetail() {
           <div><h1>{ItemData[params.id-1].name}</h1></div>
           <div><p>{ItemData[params.id-1].price}</p></div><br></br>
           <div><p style={{fontSize: '16px'}}>{ItemData[params.id-1].describe}</p></div><br></br>
-          <div>Quantity : <span onClick={minus}>⮜</span> {quantity} <span onClick={plus}>⮞</span></div>
+          <div>Quantity : <span onClick={minus}>&#8722;</span> {quantity} <span onClick={plus}>&#43;</span></div>
           <div><button>Add to Cart</button></div>
         </div>       
       </div>

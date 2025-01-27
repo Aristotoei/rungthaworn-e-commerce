@@ -13,28 +13,12 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: '/1.1',
-    element: <h1>Category 1</h1>
-  },
-  {
-    path: '/1.2',
-    element: <h1>Category 2</h1>
-  },
-  {
-    path: '/1.3',
-    element: <h1>Category 3</h1>
-  },
-  {
     path: '/product/:id',
     element: <ProductDetail />
   },
   {
     path: '/contact',
     element: <h1>GitHub : Aristotoei<br></br>Email : thavornsan@outlook.com</h1>
-  },
-  {
-    path: '*',
-    element: <h1>under development</h1>
   }
 ]);
 
